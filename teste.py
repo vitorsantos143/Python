@@ -2,21 +2,21 @@ import time
 
 print("=== SISTEMA COMERCIAL ===")
 
-usuario_adm = "admin"
-senha_entrada = "Abc12345!"
+usuario_tent = "vip"
+senha_tent = 17092026
 tentativas = 0
 acesso = False
 
 while tentativas < 3:
-    usario = input("Digite o login: ")
-    senha = input("Digite a senha: ")
+    usuario = input("Digite o login: ")
+    senha = int(input("Digite a senha: "))
  
-    if usario == usuario_adm and senha == senha_entrada:
+    if usuario == usuario_tent and senha == senha_tent:
         print("Login realizado com sucesso!")
     acesso = True
     break
 else:
-    tentativas = tentativas + 1
+    tentativas += 1
     print("Login ou senha incorretos.")
 
 if not acesso:
